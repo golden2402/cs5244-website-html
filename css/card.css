@@ -7,6 +7,7 @@
     border-radius: var(--default-border-radius);
     
     box-shadow: var(--default-box-shadow);
+    transition: box-shadow 0.2s;
 }
 
 .card h1,
@@ -30,4 +31,8 @@
 }
 
 .card__blurb {
+}
+
+.card:hover {
+    box-shadow: var(--default-box-shadow-heavy)
 }

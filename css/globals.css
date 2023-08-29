@@ -9,13 +9,18 @@
     --default-font-family: "Poppins", sans-serif;
     --default-outline: 1px inset rgba(0, 0, 0, 0.1);
     --default-border-radius: 0.25em;
+
     --default-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    --default-box-shadow-heavy: 0 0 6px 0 rgba(0, 0, 0, 0.4);
 
     --primary-color: #0087ff;
     --primary-color-alt: white;
 }
 
 body {
+    margin: 0;
+
+    background-color: #ecf8ff;
     color: var(--text-color);
 
     font-family: var(--default-font-family);
@@ -78,4 +83,9 @@ a:visited {
     border-radius: var(--default-border-radius);
     
     box-shadow: var(--default-box-shadow);
+    transition: box-shadow 0.2s;
+}
+
+.button--primary:hover {
+    box-shadow: var(--default-box-shadow-heavy);
 }
