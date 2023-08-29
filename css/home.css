@@ -1,0 +1,73 @@
+main {
+    display: flex;
+}
+
+/* split container into two evenly sized containers: */
+main > * {
+    flex: 1;
+    padding: 2em;
+
+    height: 100vh;
+}
+
+/* quickstart */
+.column__quickstart {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+}
+
+.column__quickstart > div {
+    flex: 1;
+}
+
+/* eyecatcher */
+.quickstart__eyecatcher {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.eyecatcher__header {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.eyecatcher__blurb {
+    color: var(--text-color-fade);
+    font-size: 1.2rem;
+}
+
+/* options & CTA */
+.quickstart__options {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.quickstart__categories {
+    display: flex;
+    gap: 10px;
+}
+
+.quickstart__categories > div {
+    flex: 1;
+    height: fit-content;
+}
+
+.quickstart__title {
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.quickstart__blurb {
+    line-height: 1.2;
+}
+
+/* featured */
+.column__featured {
+    display: flex;
+    flex-direction: column;
+}
