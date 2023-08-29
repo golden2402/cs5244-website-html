@@ -5,7 +5,7 @@ main {
 /* split container into two evenly sized containers: */
 main > * {
     flex: 1;
-    padding: 2em;
+    padding: 6em;
 
     height: 100vh;
 }
@@ -89,4 +89,23 @@ main > * {
 .column__featured {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.featured__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.featured__title {
+    color: var(--primary-color);
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.featured__blurb {
+    font-size: 1.1em;
+    text-align: center;
 }
