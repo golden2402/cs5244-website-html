@@ -8,6 +8,7 @@
 
     --default-font-family: "Poppins", sans-serif;
     --default-outline: 1px inset rgba(0, 0, 0, 0.1);
+    --default-border-radius: 0.25em;
     --default-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
 
     --primary-color: #0087ff;
@@ -55,4 +56,17 @@ img {
 .container {
     margin: 0 auto;
     max-width: 1536px;
+}
+
+/* buttons: */
+.button--primary {
+    padding: 0.4em;
+    
+    background-color: var(--primary-color);
+    color: var(--primary-color-alt);
+    
+    outline: var(--default-outline);
+    border-radius: var(--default-border-radius);
+    
+    box-shadow: var(--default-box-shadow);
 }
