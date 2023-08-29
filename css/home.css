@@ -83,6 +83,13 @@ main > * {
 
 .cta__image {
     width: 2rem;
+
+    transform: translateX(-25%);
+    transition: transform 0.2s;
+}
+
+.quickstart__cta:hover .cta__image {
+    transform: translateX(0);
 }
 
 /* featured */
@@ -90,6 +97,7 @@ main > * {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
 }
 
 .featured__header {
@@ -108,4 +116,20 @@ main > * {
 .featured__blurb {
     font-size: 1.1em;
     text-align: center;
+}
+
+.featured__books {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.featured__cover {
+    padding: 0.25em;
+
+    width: 150px;
+    height: 200px;
+
+    border-radius: var(--default-border-radius);
 }
