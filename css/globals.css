@@ -1,0 +1,33 @@
+:root {
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* media queries?: */
+.container {
+    margin: 0 auto;
+    max-width: 1536px;
+}
