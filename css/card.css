@@ -1,5 +1,5 @@
 .card {
-    padding: 0.4em;
+    padding: 0.6em;
     
     background-color: rgb(var(--background-color));
 
@@ -7,6 +7,12 @@
     border-radius: 0.2em;
     
     box-shadow: var(--default-box-shadow);
+}
+
+.card h1,
+.card h2,
+.card h3 {
+    line-height: 1.2;
 }
 
 .card__header {
