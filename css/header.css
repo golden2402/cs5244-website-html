@@ -24,3 +24,13 @@ header {
     align-items: center;
     gap: 10px;
 }
+
+.navbar__button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.account {
+    background-color: #37b86b;
+}

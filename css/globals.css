@@ -15,6 +15,9 @@
 
     --primary-color: #0087ff;
     --primary-color-alt: white;
+
+    --secondary-color: #ddefff;
+    --secondary-color-alt: var(--primary-color);
 }
 
 body {
@@ -75,7 +78,7 @@ a:visited {
 .page__container {
     display: flex;
     flex-direction: column;
-    
+
     min-height: 100vh;
 }
 
@@ -88,7 +91,18 @@ a:visited {
     box-shadow: var(--default-box-shadow);
 }
 
-/* buttons: */
+/* buttons & input: */
+button,
+input, 
+input[type="submit"],
+input[type="reset"] {
+    all: unset;
+}
+
+input::placeholder {
+    color: var(--text-color-fade);
+}
+
 .button--primary {
     padding: 0.4em;
     
@@ -104,4 +118,17 @@ a:visited {
 
 .button--primary:hover {
     box-shadow: var(--default-box-shadow-heavy);
+}
+
+.button--secondary {
+    padding: 0.4em;
+    
+    background-color: var(--secondary-color);
+    color: var(--secondary-color-alt);
+    
+    outline: var(--default-outline);
+    border-radius: var(--default-border-radius);
+    
+    box-shadow: var(--default-box-shadow);
+    transition: box-shadow 0.2s;
 }
