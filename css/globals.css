@@ -132,3 +132,7 @@ input::placeholder {
     box-shadow: var(--default-box-shadow);
     transition: box-shadow 0.2s;
 }
+
+.button--secondary:hover {
+    box-shadow: var(--default-box-shadow-heavy);
+}
