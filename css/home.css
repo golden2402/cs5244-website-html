@@ -1,13 +1,13 @@
 main {
     display: flex;
+    /* fill any remaining space not taken by header/footer: */
+    flex-grow: 1;
 }
 
 /* split container into two evenly sized containers: */
 main > * {
     flex: 1;
     padding: 6em;
-
-    height: 100vh;
 }
 
 /* quickstart */
