@@ -30,6 +30,12 @@ body {
     font-size: 14px;
 }
 
+main {
+    display: flex;
+    /* fill any remaining space not taken by header/footer: */
+    flex-grow: 1;
+}
+
 * {
     box-sizing: border-box;
 }
