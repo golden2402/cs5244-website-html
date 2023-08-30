@@ -103,7 +103,7 @@ input::placeholder {
     color: var(--text-color-fade);
 }
 
-.button--primary {
+.box--primary {
     padding: 0.4em;
     
     background-color: var(--primary-color);
@@ -116,11 +116,11 @@ input::placeholder {
     transition: box-shadow 0.2s;
 }
 
-.button--primary:hover {
+.box--primary:hover {
     box-shadow: var(--default-box-shadow-heavy);
 }
 
-.button--secondary {
+.box--secondary {
     padding: 0.4em;
     
     background-color: var(--secondary-color);
@@ -133,6 +133,6 @@ input::placeholder {
     transition: box-shadow 0.2s;
 }
 
-.button--secondary:hover {
+.box--secondary:hover {
     box-shadow: var(--default-box-shadow-heavy);
 }
