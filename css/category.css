@@ -1,0 +1,155 @@
+main {
+    display: flex;
+    gap: 10px;
+
+    padding: 4em 0;
+}
+
+.category__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    min-width: 280px;
+    height: max-content;
+}
+
+.category__item__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.category__item {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0.2em 0.4em;
+
+    outline: var(--default-outline); 
+    border-radius: var(--default-border-radius);
+}
+
+.category__item.item--selected {
+
+}
+
+.category__list {
+    padding: 0.8em;
+}
+
+.category__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
+    width: 100%;
+
+    color: black;
+}
+
+.category__title {
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.category__line {
+    background-color: black;
+    height: 2px;
+    width: 100%;
+}
+
+.category__icon {
+    width: 20px;
+}
+
+.book__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+
+    height: max-content;
+}
+
+.book__item {
+    display: flex;
+    gap: 10px;
+
+    height: max-content;
+    width: 440px;
+}
+
+.item__cover__frame {
+    position: relative;
+    padding: 0.05em;
+}
+
+.item__cover {
+    max-width: 150px;
+    height: 200px;
+
+    border-radius: calc(var(--default-border-radius) / 2);
+}
+
+.read__now__button {
+    position: absolute;
+    
+    bottom: 0.4em;
+    left: 0.4em;
+    
+    padding: 0.5em;
+
+    border-radius: 8px;
+}
+
+.book__item__actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.book__item__title {
+    text-transform: uppercase;
+}
+
+.book__item__author {
+    color: var(--text-color-fade);
+}
+
+.book__item__checkout {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkout__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+
+    height: 100%;
+
+    outline: var(--default-outline);
+    border-radius: var(--default-border-radius);
+}
+
+.checkout__price__text {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.checkout__button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
