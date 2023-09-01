@@ -7,7 +7,7 @@
     --text-color-fade: #707070;
 
     --default-font-family: "Poppins", sans-serif;
-    --default-outline: 1px inset rgba(0, 0, 0, 0.1);
+    --default-outline: 1px solid rgba(0, 0, 0, 0.1);
     --default-border-radius: 0.25em;
 
     --default-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
