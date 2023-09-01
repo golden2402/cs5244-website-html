@@ -43,15 +43,53 @@ header {
     width: 100%;
 
     opacity: 0;
-    transform: translateY(-0.5em);
+    transform: translateY(calc(-50% - 0.5em)) scaleY(0);
 }
 
 .dropdown__seat:hover .dropdown__menu {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scaleY(100%);
 
     transition-property: opacity, transform;
     transition-duration: 200ms;
+}
+
+/* category menu */
+.category__dropdown {
+    width: 240px;
+    /* assuming position: absolute */
+    left: -50%;
+}
+
+.category__dropdown__header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-weight: 600;
+}
+
+.category__dropdown__header__title {
+    text-transform: uppercase;
+}
+
+.category__dropdown__header__line {
+    background-color: black;
+    height: 2px;
+    width: 100%;
+}
+
+.category__dropdown__header__icon {
+    width: 20px;
+}
+
+.category__dropdown__item {
+    margin-left: 1em;
+    transition: transform 200ms;
+}
+
+.category__dropdown__item:hover {
+    transform: translateX(0.4em);
 }
 
 /* account menu */
