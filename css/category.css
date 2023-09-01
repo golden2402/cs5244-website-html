@@ -33,15 +33,14 @@ main {
 }
 
 .category__item.item--selected {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-
-    outline-color: var(--primary-color);
+    color: var(--primary-color-alt);
+    background-color: var(--primary-color);
 }
 
 .category__item:not(.item--selected):hover {
-    color: var(--text-color);
-    outline-color: var(--text-color);
+    color: var(--secondary-color-alt);
+    background-color: var(--secondary-color);
+    outline-color: var(--secondary-color-alt);
 
     transition-property: color, outline-color;
     transition-duration: 200ms;
