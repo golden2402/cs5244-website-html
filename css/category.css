@@ -26,12 +26,25 @@ main {
 
     padding: 0.2em 0.4em;
 
+    color: var(--text-color-fade);
+
     outline: var(--default-outline); 
     border-radius: var(--default-border-radius);
 }
 
 .category__item.item--selected {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 
+    outline-color: var(--primary-color);
+}
+
+.category__item:not(.item--selected):hover {
+    color: var(--text-color);
+    outline-color: var(--text-color);
+
+    transition-property: color, outline-color;
+    transition-duration: 500ms;
 }
 
 .category__list {
