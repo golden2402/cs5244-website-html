@@ -44,14 +44,14 @@ header {
 
     opacity: 0;
     transform: translateY(calc(-50% - 0.5em)) scaleY(0);
+
+    transition-property: opacity, transform;
+    transition-duration: 200ms;
 }
 
 .dropdown__seat:hover .dropdown__menu {
     opacity: 1;
     transform: translateY(0) scaleY(100%);
-
-    transition-property: opacity, transform;
-    transition-duration: 200ms;
 }
 
 /* category menu */
