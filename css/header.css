@@ -31,24 +31,12 @@ header {
     gap: 5px;
 }
 
-/* account menu */
-.account {
-    background-color: #37b86b;
-}
-
-.account__menu {
+/* generic dropdown */
+.dropdown__seat {
     position: relative;
 }
 
-.account__menu:hover .account__dropdown {
-    opacity: 1;
-    transform: translateY(0);
-
-    transition-property: opacity, transform;
-    transition-duration: 200ms;
-}
-
-.account__dropdown {
+.dropdown__menu {
     position: absolute;
     top: calc(100%);
 
@@ -56,6 +44,19 @@ header {
 
     opacity: 0;
     transform: translateY(-0.5em);
+}
+
+.dropdown__seat:hover .dropdown__menu {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition-property: opacity, transform;
+    transition-duration: 200ms;
+}
+
+/* account menu */
+.account {
+    background-color: #37b86b;
 }
 
 .account__divider {
