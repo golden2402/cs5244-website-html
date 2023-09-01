@@ -87,6 +87,12 @@ main {
     height: max-content;
 }
 
+@media screen and (max-width: 1200px) {
+    .book__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .book__item {
     display: flex;
     gap: 10px;
