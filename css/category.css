@@ -44,7 +44,7 @@ main {
     outline-color: var(--text-color);
 
     transition-property: color, outline-color;
-    transition-duration: 500ms;
+    transition-duration: 200ms;
 }
 
 .category__list {
