@@ -18,6 +18,8 @@
 
     --secondary-color: #ddefff;
     --secondary-color-alt: var(--primary-color);
+
+    --danger-color: #ff4848;
 }
 
 body {
@@ -95,6 +97,11 @@ a:visited {
     background-color: rgba(0, 0, 0, 0.1);
     
     box-shadow: var(--default-box-shadow);
+}
+
+.divider.divider--horizontal {
+    width: 100%;
+    height: 1px;
 }
 
 /* buttons & input: */

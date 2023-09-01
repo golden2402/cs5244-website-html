@@ -31,6 +31,37 @@ header {
     gap: 5px;
 }
 
+/* account menu */
 .account {
     background-color: #37b86b;
+}
+
+.account__menu {
+    position: relative;
+}
+
+.account__menu:hover .account__dropdown {
+    opacity: 1;
+    transform: translateY(0);
+
+    transition-property: opacity, transform;
+    transition-duration: 200ms;
+}
+
+.account__dropdown {
+    position: absolute;
+    top: calc(100%);
+
+    width: 100%;
+
+    opacity: 0;
+    transform: translateY(-0.5em);
+}
+
+.account__divider {
+    margin: 0.5em 0;
+}
+
+.account__logout {
+    color: var(--danger-color);
 }
