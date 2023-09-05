@@ -11,12 +11,17 @@ header {
 .header__title {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .header__title h1,
 .header__title h2,
 .header__title h3 {
     line-height: 1.2;
+}
+
+.header__title__logo {
+    width: 4em;
 }
 
 .header__links {
