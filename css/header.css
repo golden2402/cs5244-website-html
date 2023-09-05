@@ -12,12 +12,14 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+    
+    height: 100%;
 }
 
 .header__title h1,
 .header__title h2,
 .header__title h3 {
-    line-height: 1.2;
+    line-height: 1;
 }
 
 .header__title__logo {
@@ -95,6 +97,24 @@ header {
 
 .category__dropdown__item:hover {
     transform: translateX(0.4em);
+}
+
+/* shopping cart */
+.shopping__cart {
+    position: relative;
+}
+
+.shopping__cart__count {
+    position: absolute;
+    top: -0.75rem;
+    right: -0.5rem;
+    
+    padding: 0rem 0.4rem;
+    
+    background-color: var(--danger-color);
+    box-shadow: var(--default-box-shadow);
+    border-radius: var(--default-border-radius);
+    outline: var(--default-outline);
 }
 
 /* account menu */
